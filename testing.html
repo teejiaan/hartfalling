@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="testing.css">
     <title>Valentine Letter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
 </head>
 
 
@@ -22,32 +24,37 @@
     <div id="letter-container">
         <div class="letter-window">
 
-            <h1 id="letter-title">Will you be my Valentine?</h1>
+            <!-- NEW wrapper -->
+            <div class="letter-content">
 
-            <img src="cat.gif" class="cat" id="letter-cat" />
+                <h1 id="letter-title">Will you be my Valentine?</h1>
 
-            <div class="buttons" id="letter-buttons">
+                <img src="cat.gif" class="cat" id="letter-cat" />
 
-                <img src="yes.png" class="btn yes-button" alt="yes" />
+                <div class="buttons" id="letter-buttons">
+                    <img src="yes.png" class="yes-btn button" alt="yes" />
 
-                <div class="no-wrapper">
-                    <img src="no.png" class="btn no-button" alt="no" />
-
+                    <div class="no-wrapper">
+                        <img src="no.png" class="no-btn button" alt="no" />
+                    </div>
                 </div>
+
+                <p id="final-text" class="final-text" style="display: none">
+                    <strong>Valentine Date: 1PM Start, Just bring yourself :P</strong>
+                </p>
+
             </div>
-
-            <p id="final-text" class="final-text" style="display: none">
-                <strong> Valentine Date: 1PM Start, Just bring yourself :P </strong>
-            </p>
-
         </div>
     </div>
 
 
 
 
+
     </div>
     <script src="testing.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 
 
 
